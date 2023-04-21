@@ -10,3 +10,4 @@ closeButton.addEventListener("click", (event) => {
   event.preventDefault();
   navigation.classList.remove("active");
 });
+
