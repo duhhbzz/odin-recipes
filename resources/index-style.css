@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    align-items: center;
+}
+
+header img, header h1 {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+header.page-header {
+    color: red;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    z-index: 999;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  nav.active {
+    left: 0;
+  }
+
+  #menu-btd:hover {
+    animation: wiggle 0.5s ease-in-out;
+  }
+  
+  @keyframes wiggle {
+    0% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(-10deg);
+    }
+    50% {
+      transform: rotate(0deg);
+    }
+    75% {
+      transform: rotate(10deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+  }
