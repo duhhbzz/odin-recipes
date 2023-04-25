@@ -1,41 +1,81 @@
+body  {
+  border-style: groove;
+  font-family: 'Times New Roman', Times, serif;
+}
+
 /* style for page header */
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+header img,
+header h1 {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+header.page-header {
+  color: white;
+  background-color: red;
+}
+
 nav {
-    position: fixed;
-    top: 0;
-    left: -300px;
-    width: 300px;
-    height: 100%;
-    background-color: lightgrey;
-    z-index: 999;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  nav.active {
-    left: 0;
-  }
+  position: fixed;
+  top: 0;
+  left: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: lightgrey;
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
 
-  #menu-btd:hover {
-    animation: wiggle 0.5s ease-in-out;
-  }
-  
-  @keyframes wiggle {
-    0% {
-      transform: rotate(0deg);
-    }
-    25% {
-      transform: rotate(-10deg);
-    }
-    50% {
-      transform: rotate(0deg);
-    }
-    75% {
-      transform: rotate(10deg);
-    }
-    100% {
-      transform: rotate(0deg);
-    }
-  }
+nav.active {
+  left: 0;
+}
 
-  /*end page header style */
+#menu-btd:hover {
+  animation: wiggle 0.5s ease-in-out;
+}
 
-  
+@keyframes wiggle {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/*end page header style */
+
+
+.recipe-article {
+  background-color: antiquewhite;
+  border-style: ridge;
+  border-radius: 1%;
+  margin: 5%;
+}
+
+.recipe-img {
+  border-radius: 2%;
+  display: flex;
+}
+
+.recipe-header  {
+  display: block;
+  align-items: center;
+  border-style: groove;
+  border-radius: 1%;
+  margin: 10px 25%;
+}
